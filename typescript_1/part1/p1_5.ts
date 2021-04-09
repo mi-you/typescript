@@ -51,6 +51,7 @@ let h; //不声明相当于隐式any
 let i:unknown; //i可以赋任意类型值
 i = true;
 //与any的区别在于，any声明的值可以赋值给其他类型，但unknown不行
+//其他类型的值也可以赋给any,unknown
 f = g; //any 赋给 boolean; f = i; //有问题
 /**
  * 类型断言：可以使用类型断言来告诉解析器变量实际类型
